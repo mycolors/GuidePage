@@ -102,7 +102,8 @@ public class WelcomeGuideActivity extends Activity implements View.OnClickListen
         if (position < 0 || position > pics.length || currentIndex == position) {
             return;
         }
-        dots[position].setEnabled(false);
+        dots[currentIndex].setEnabled(false);
+        dots[position].setEnabled(true);
         currentIndex = position;
     }
 
